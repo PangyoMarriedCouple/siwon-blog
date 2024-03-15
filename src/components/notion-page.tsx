@@ -24,7 +24,8 @@ export default function NotionPage({
 
   return (
     <NotionRenderer
-      darkMode={mounted ? theme === 'dark' : false}
+      // darkMode={!mounted ? theme === 'dark' : false}
+      darkMode={true}
       recordMap={recordMap}
       fullPage
       forceCustomImages
