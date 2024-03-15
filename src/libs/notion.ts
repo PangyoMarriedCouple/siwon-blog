@@ -6,7 +6,9 @@ const notion = new NotionAPI({
 });
 
 export function getRecordMap(id: string) {
+  // console.log(id);
   return notion.getPage(id);
+  // return [];
 }
 
 export function mapImageUrl(url: string, block: Block): string | null {
